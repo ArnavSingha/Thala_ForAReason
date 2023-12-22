@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thala For A Reason😉!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      id="confetti-container"
+      class="js-container container"
+      style="top: 0px !important; display: none"
+    ></div>
+    <div id="container">
+      <h1>Thala For A Reason😉!</h1>
+      <div id="tabs">
+        <canvas id="confetti"></canvas>
+        <button class="tab active" onclick="showTab('oneDigit')">
+          One Digit
+        </button>
+        <button class="tab" onclick="showTab('twoDigits')">Two Digits</button>
+        <!-- <button class="tab" onclick="showTab('threeDigits')">
+          Three Digits
+        </button> -->
+        <button class="tab" onclick="showTab('anyWord')">Any word</button>
+      </div>
+
+      <div id="oneDigit" class="tabContent">
+        <input
+          type="text"
+          id="singleDigit"
+          placeholder="Type the Lucky number"
+        />
+        <button id="button" onclick="checkOneDigit()">Submit</button>
+      </div>
+
+      <div id="twoDigits" class="tabContent" style="display: none">
+        <input type="text" id="firstDigit" placeholder="First Lucky number" />
+        <input type="text" id="secondDigit" placeholder="Second Lucky number" />
+        <button id="button" onclick="checkTwoDigits()">Submit</button>
+      </div>
+
+      <!-- <div id="threeDigits" class="tabContent" style="display: none">
+        <input type="text" id="digitOne" placeholder="First Lucky number" />
+        <input type="text" id="digitTwo" placeholder="Second Lucky number" />
+        <input type="text" id="digitThree" placeholder="Third Lucky number" />
+        <button id="button" onclick="checkThreeDigits()">Submit</button>
+      </div> -->
+
+      <div id="anyWord" class="tabContent" style="display: none">
+        <input type="text" id="word" placeholder="Type the Lucky word/number" />
+        <button id="button" onclick="checkWord()">Submit</button>
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js"></script>
+    <audio id="success-sound" src="music.mp3" preload="auto"></audio>
+  </body>
+</html>
