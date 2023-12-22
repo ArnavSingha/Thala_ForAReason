@@ -95,7 +95,7 @@ input[type="text"]:focus {
 
 button {
   margin-top: 20px;
-  background-color: #28a745;
+  background-color: #faad14;
   color: white;
   cursor: pointer;
   border-radius: 20px;
@@ -103,7 +103,7 @@ button {
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #40a9ff;
 }
 
 /* Media query for smaller screens */
@@ -136,7 +136,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #3498db, #9b59b6);
+  background: linear-gradient(135deg, #fadb14, #40a9ff);
 }
 
 canvas#confetti {
